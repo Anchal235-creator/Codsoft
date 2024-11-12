@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cstdlib>
+#include<ctime>
+int main() {
+   
+    srand(time(0));
+
+    
+    int numberToGuess = rand() % 100 + 1;
+
+    
+    int estimate ;
+    int attempts = 0;
+
+    
+    while (correct) {
+        
+        cout << "Guess a number between 1 and 100: ";
+        cin >> estimate;
+        attempts++;
+
+        
+        if (estimate == numberToGuess) {
+            cout << "correct guess ". <<endl;
+            break;
+        }
+        
+        else if (userGuess < numberToGuess) {
+            cout << "Too low! Try again." << endl;
+        } else {
+            cout << "Too high! Try again." << endl;
+        }
+    }
+
+    return 0;
+}
